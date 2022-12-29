@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/pancrasio.css" >
-        <link href="/javascript/cv.js">
+        <link rel="stylesheet" href="css/cv.css" >
+        <link href="javascript/cv.js">
         
         <title>Ezequiel Ian Silva</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body >
+      <script src="javascript/cv.js"></script>
+      
       <div class="container text-right p-3 mb-2 bg-primary text-white">
         <h1 class="--bs-primary">Ezequiel Ian Silva</h1>
       </div>
@@ -17,7 +19,7 @@
               <div class="col-8 col-sm-4 bg-primary-subtle text-emphasis-primary"><h3 >Programador Junior</h3>
                 <p >Tengo 28 años y estoy buscando
                 empleos en los que pueda
-                desarrollar más mis habilidades
+                desarrollar más las habilidades
                 que he adquirido en mis estudios y
                 trabajos anteriores.</p>
               </div>
@@ -35,7 +37,7 @@
               </div>
                
           
-              <div class="col-8 col-sm-4"><h3>Información de contacto</h3>
+              <div class="col-8 col-sm-4"><h3  onclick="probar()">Información de contacto</h3>
                 <p>Celular: (+598)095617517
                 Mail: ezequialiansilva@gmail.com
                 LinkedIn: www.linkedin.com/in/ezequiel-ian-4808711a3
@@ -46,7 +48,7 @@
               <div class="col-8 col-sm-4"><h3>Experiencia Laboral</h3>
                 <h5>Encargado de Stock</h4>
                   <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#super" role="button" aria-expanded="false" aria-controls="super">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#super" role="button" id="btnSuper" aria-expanded="false" aria-controls="super" onclick="expandir(this.id)">
                       +
                     </a>
                   </p>
@@ -62,7 +64,7 @@
                        
                 <h5>Tecnico y administrativo</h5>
                 <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#puntacable" role="button" aria-expanded="false" aria-controls="puntacable">
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#puntacable" role="button" aria-expanded="false" aria-controls="puntacable" id="btnPuntaCable" onclick="expandir(this.id)">
                     +
                   </a>
                 </p>
@@ -83,56 +85,58 @@
               <div class="col-8 col-sm-4">
                 <h3>Educación previa</h3>
                 <h5>
-                  UTU Maldonado
+                  Bachiller en informática
                 </h5>
                 <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#utu" role="button" aria-expanded="false" aria-controls="utu">
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#utu" role="button" aria-expanded="false" aria-controls="utu" id="btnUtu" onclick="expandir(this.id)">
                     +
                   </a>
                 </p>
                 <div class="collapse" id="utu">
                   <div class="card card-body">
                     <p>
-                      Bachiller en informática generación 2010<br>
-                      Diseño de base de datos en MySQL <br>
-                      Programación en C++ y C# <br>
-                      Desarrollo web con HTML y Javascript
+                      Cursado en UTU Maldonado:<br>
+                      • Generación 2010<br>
+                      • Diseño de base de datos en MySQL <br>
+                      • Programación en C++ y C# <br>
+                      • Desarrollo web con HTML y Javascript
                     </p>
                   </div>
                 </div>
                 
                 <h5>
-                  Jovenes a programar 
+                  Desarrollo web
                 </h5>
                 <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="btnDesarrollo" onclick="expandir(this.id)">
                     +
                   </a>
                 </p>
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
                     <p>
-                      Desarrollo web frontend con CSS, Javascript y Bootstrap<br>
-                      Realización de servidor con Node JS y Express<br>
-                      Utilización de Fecht y API's con JSON
+                      Cursado en Jovenes a programar (Ceibal): <br>
+                      • Desarrollo web frontend con CSS, Javascript y Bootstrap<br>
+                      • Realización de servidor con Node JS y Express<br>
+                      • Utilización de Fecht y API's con JSON
                     </p>
                   </div>
                 </div>
                 
                 <h5>
-                  CERP del Este
+                  Profesorado en informática
                 </h5>
                 <p>
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#cerp" role="button" aria-expanded="false" aria-controls="cerp">
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#cerp" role="button" aria-expanded="false" aria-controls="cerp" id="btnCerp" onclick="expandir(this.id)">
                     +
                   </a>
                 </p>
                 <div class="collapse" id="cerp">
                   <div class="card card-body">
                     <p>
-                      Profesorado en informática <br>
-                      Programación en C++ <br>
-                      Estudio de didáctica y otras habilidades para la enseñanza
+                      Cursado en CERP del Este <br>
+                      • Programación en C++ <br>
+                      • Estudio de didáctica y otras habilidades para la enseñanza
                     </p>
                   </div>
                 </div>
