@@ -2,8 +2,10 @@
 
 const accesKey = "484beef48507970de27f18a0e8fec9ce";
 const fuenteClimas = "http://api.weatherstack.com/current?access_key=484beef48507970de27f18a0e8fec9ce&query=Montevideo";
-const fakeCommerce = "https://fakestoreapi.com/products";
-const fakeProduct = "https://fakestoreapi.com/products/1";
+const fakeProduct = "https://fakestoreapi.com/products/";
+const fakeCategories = "https://fakestoreapi.com/products/categories";
+const fakeProducts = "https://fakestoreapi.com/products";
+const fakeCategory = "https://fakestoreapi.com/products/category/";
 
 var getJSONData = function(url){
     var result = {};
